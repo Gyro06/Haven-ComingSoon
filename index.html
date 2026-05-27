@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haven | Coming Soon</title>
+    <meta
+      name="description"
+      content="A brighter, more trusted Haven is on the way. Join the waitlist for early access to Haven's new community-first home services marketplace."
+    />
+    <meta property="og:title" content="Haven | Coming Soon" />
+    <meta
+      property="og:description"
+      content="Trusted local services, reimagined. Join the waitlist for the next Haven launch."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/hero-home-improvement.jpg" />
+    <meta property="og:locale" content="en_US" />
+    <link rel="icon" href="assets/favicon.ico" sizes="any" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container nav-shell">
+          <a class="brand" href="#top" aria-label="Haven coming soon homepage">
+            <img src="assets/haven-logo.png" alt="Haven" width="180" height="68" />
+          </a>
+
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="site-nav" id="site-nav" aria-label="Primary">
+            <a href="#why-haven">Why Haven</a>
+            <a href="#preview">Sneak Peek</a>
+            <a href="#waitlist">Join Waitlist</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <section class="hero-section" id="top">
+          <div class="container hero-grid">
+            <div class="hero-copy" data-reveal>
+              <p class="eyebrow">Trusted local services, reimagined</p>
+              <h1>A better way to find trusted home-service providers is almost here.</h1>
+              <p class="hero-text">
+                Haven is rebuilding the experience from the ground up with brighter discovery,
+                stronger trust signals, and a clearer path for homeowners, providers, and communities.
+              </p>
+
+              <div class="hero-actions">
+                <a class="button button-primary" href="#waitlist">Join the waitlist</a>
+                <a class="button button-secondary" href="#preview">See what's coming</a>
+              </div>
+
+              <form
+                class="waitlist-form"
+                id="waitlist"
+                action=""
+                method="post"
+                data-form-endpoint=""
+                data-submit-mode="placeholder"
+                novalidate
+              >
+                <!--
+                  Integration notes:
+                  1. Leave action and data-form-endpoint empty to keep local placeholder mode.
+                  2. For a native provider form post, set action="https://your-provider-endpoint".
+                  3. For inline AJAX handling on a provider that supports browser CORS, set
+                     data-form-endpoint="https://your-provider-endpoint" and data-submit-mode="fetch".
+                -->
+                <div class="form-header">
+                  <div>
+                    <h2>Get launch updates</h2>
+                    <p>Be first to know when the new Haven experience opens.</p>
+                  </div>
+                  <span class="form-badge">Early access</span>
+                </div>
+
+                <div class="form-row">
+                  <label class="sr-only" for="email">Email address</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    inputmode="email"
+                    autocomplete="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                  <button class="button button-primary form-submit" type="submit">
+                    Notify me
+                  </button>
+                </div>
+
+                <input type="hidden" name="source" value="coming-soon-bluehost" />
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                <noscript>
+                  <p class="form-note">
+                    Add your real waitlist endpoint to this form before publishing if you want submissions
+                    to work without JavaScript.
+                  </p>
+                </noscript>
+              </form>
+            </div>
+
+            <div class="hero-visual" data-reveal>
+              <div class="visual-stage">
+                <div class="visual-card visual-card-main">
+                  <img
+                    src="assets/hero-construction.jpg"
+                    alt="Professionals planning and completing a home improvement project"
+                    width="900"
+                    height="1100"
+                  />
+                  <div class="visual-overlay">
+                    <p>Built for modern neighborhoods</p>
+                    <strong>Verified providers. Clear savings. Better trust.</strong>
+                  </div>
+                </div>
+
+                <div class="visual-card visual-card-panel">
+                  <p class="panel-label">What the next Haven highlights</p>
+                  <ul>
+                    <li>Bright marketplace discovery</li>
+                    <li>Provider credibility and compliance signals</li>
+                    <li>Role-aware experiences for every audience</li>
+                  </ul>
+                </div>
+
+                <div class="visual-card visual-card-metric">
+                  <span>Community-first</span>
+                  <strong>Homeowners, providers, and HOAs each get a tailored path.</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="trust-strip" aria-label="Haven trust highlights">
+          <div class="container trust-grid">
+            <article data-reveal>
+              <p>Verified providers</p>
+              <strong>Identity and business trust signals are central to the new experience.</strong>
+            </article>
+            <article data-reveal>
+              <p>Community-first</p>
+              <strong>Built to respect neighborhood standards, not fight against them.</strong>
+            </article>
+            <article data-reveal>
+              <p>Compliance-minded marketplace</p>
+              <strong>Discovery, purchase, and oversight are being designed with more clarity.</strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="audience-section" id="why-haven">
+          <div class="container section-header" data-reveal>
+            <p class="eyebrow">Why the new Haven will feel different</p>
+            <h2>Distinct experiences for the people who actually use Haven.</h2>
+            <p>
+              The next version of Haven is being shaped around three very different jobs to be done,
+              instead of forcing everyone into the same interface.
+            </p>
+          </div>
+
+          <div class="container audience-grid">
+            <article class="audience-card" data-reveal>
+              <img
+                src="assets/hero-home-improvement.jpg"
+                alt="Homeowner planning a home improvement project"
+                width="800"
+                height="560"
+              />
+              <div class="audience-card-copy">
+                <p class="card-kicker">For homeowners</p>
+                <h3>Find trustworthy help without the noise.</h3>
+                <p>
+                  Browse with more confidence, clearer savings, and a calmer experience built around
+                  projects, appointments, and home-service decisions.
+                </p>
+              </div>
+            </article>
+
+            <article class="audience-card" data-reveal>
+              <img
+                src="assets/hero-renovation.jpg"
+                alt="Service provider completing renovation work"
+                width="800"
+                height="560"
+              />
+              <div class="audience-card-copy">
+                <p class="card-kicker">For providers</p>
+                <h3>Show credibility and grow with better signals.</h3>
+                <p>
+                  Providers will get a stronger growth story, clearer performance insights, and more
+                  thoughtful visibility into the offers that drive trust.
+                </p>
+              </div>
+            </article>
+
+            <article class="audience-card audience-card-dark" data-reveal>
+              <div class="audience-card-copy">
+                <p class="card-kicker">For communities</p>
+                <h3>Oversight that feels intentional, not bolted on.</h3>
+                <p>
+                  Haven is leaning further into governance, compliance context, and community-specific
+                  workflows so oversight can feel responsible and modern.
+                </p>
+                <ul class="mini-list">
+                  <li>Community-aware project standards</li>
+                  <li>Clearer audit and review surfaces</li>
+                  <li>Better separation between public and admin contexts</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="preview-section" id="preview">
+          <div class="container preview-wrap">
+            <div class="section-header section-header-dark" data-reveal>
+              <p class="eyebrow">Sneak peek</p>
+              <h2>A few hints at what’s coming next.</h2>
+              <p>
+                These aren’t final screens. They’re signals about the direction: lighter discovery,
+                stronger provider proof, and a more deliberate control layer for community admins.
+              </p>
+            </div>
+
+            <div class="preview-grid">
+              <article class="product-card" data-reveal>
+                <div class="product-card-top">
+                  <span class="product-pill">Marketplace</span>
+                  <span class="product-dot"></span>
+                </div>
+                <h3>Brighter public discovery</h3>
+                <p>
+                  Cleaner hero storytelling, category imagery, trust proof, and featured offers that
+                  feel more like a premium local brand than a generic marketplace.
+                </p>
+                <div class="mock-window">
+                  <div class="mock-search">Search deals, services, or providers</div>
+                  <div class="mock-tags">
+                    <span>Roofing</span>
+                    <span>HVAC</span>
+                    <span>Landscaping</span>
+                  </div>
+                  <div class="mock-card-row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card" data-reveal>
+                <div class="product-card-top">
+                  <span class="product-pill">Provider growth</span>
+                  <span class="product-dot"></span>
+                </div>
+                <h3>Operational confidence for providers</h3>
+                <p>
+                  Providers will see more focused growth tools, performance framing, and verification
+                  context that help explain why customers should trust them.
+                </p>
+                <div class="metric-stack">
+                  <div class="metric-card">
+                    <span>Visibility</span>
+                    <strong>Campaigns and featured offers</strong>
+                  </div>
+                  <div class="metric-card">
+                    <span>Credibility</span>
+                    <strong>Verification-first reputation cues</strong>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card" data-reveal>
+                <div class="product-card-top">
+                  <span class="product-pill">Community oversight</span>
+                  <span class="product-dot"></span>
+                </div>
+                <h3>A more intentional control room</h3>
+                <p>
+                  Community and admin experiences are being treated as their own environment, with denser
+                  insights, review workflows, and clearer risk surfaces.
+                </p>
+                <div class="audit-card">
+                  <div class="audit-line">
+                    <span>Compliance review</span>
+                    <strong>Queued</strong>
+                  </div>
+                  <div class="audit-line">
+                    <span>Provider verification</span>
+                    <strong>Tracked</strong>
+                  </div>
+                  <div class="audit-line">
+                    <span>Community rules</span>
+                    <strong>Visible</strong>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="final-cta">
+          <div class="container final-cta-shell" data-reveal>
+            <div>
+              <p class="eyebrow">Get first access</p>
+              <h2>Be there when the new Haven opens.</h2>
+              <p>
+                Join the waitlist for launch updates, early previews, and the first invite when the new
+                experience goes live.
+              </p>
+            </div>
+            <a class="button button-primary" href="#waitlist">Join the waitlist</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-shell">
+          <div class="footer-brand">
+            <img src="assets/haven-logo.png" alt="Haven" width="160" height="60" />
+            <p>Community-first home services marketplace. Better trust, better clarity, coming soon.</p>
+          </div>
+
+          <div class="footer-links">
+            <a href="#why-haven">Why Haven</a>
+            <a href="#preview">Sneak Peek</a>
+            <a href="#waitlist">Waitlist</a>
+            <a href="#top">Back to top</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
